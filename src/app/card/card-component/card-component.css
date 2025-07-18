@@ -23,7 +23,7 @@
 }
 
 .box{
-    background-color: rgb(110, 125, 210);
+    background-color:   rgb(123, 132, 182);
     color:rgb(2, 2, 3);
     text-align: center;
     padding: 20px;
@@ -92,6 +92,11 @@
   padding: 6px;
   margin: 10px 0;
   box-sizing: border-box;
+}
+
+.action{
+  display: flex;
+  justify-content: space-between;
 }
 
 .action button {

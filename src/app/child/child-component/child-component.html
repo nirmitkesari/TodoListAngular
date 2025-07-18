@@ -1,0 +1,29 @@
+<p>child-component works!</p>
+
+name = {{courseName}}
+
+<input [value]=" 'name = ' +  courseName" />
+
+<div [attr.value]=" 'name = ' + courseName"></div>
+
+<h2>Welcome, {{ username }}</h2>
+
+
+
+<input [value]=" 'Welcome, ' + username" />
+
+
+<p [class.active]="isLoggedIn">This paragrap styled with class binding.</p>
+
+<p [style.backgroundColor]="bgColor">This paragraph having background color.</p>
+
+<input #userInput type="text" placeholder="Enter something" />
+<p>You typed: {{ userInput.value }}</p>
+
+<input [(ngModel)]="inputText" placeholder="Two-way binded input" />
+<p>Two-way value: {{ inputText }}</p>
+
+<p>{{ isLoggedIn ? 'User is logged in' : 'User is not logged in' }}</p>
+
+
+<img [src]="'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2Fgeekculture%2Fangular-a-beginners-guide-f8cd9ee7325&psig=AOvVaw1oXn5tCgm89EB-Gew3NPQO&ust=1752839009329000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCKCI36vpw44DFQAAAAAdAAAAABALhJFUQ4cew:1752752602806&q=angular+image&udm=2&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZ1Y6MJ25_tmWITc7uy4KIeoJTKjrFjVxydQWqI2NcOhZVmrJB8DQUK5IzxA2fZbQF4YL5sNSRJGgx0e9Z9AxExzjE4_ynshmXB4KOs3cwRUeqSxtyEph1-LMoYoz7AgsxiAlRbfQlh62fpf4TvoMmLeIHIDQBlO9bBf83uliUCcabaD8ejPu9aoigNJtiQ30WOIRP0w&sa=X&ved=2ahUKEwj_1pOi6MOOAxWhbGwGHRN8G58QtKgLKAF6BAgSEAE&biw=1536&bih=695&dpr=1.25#vhid=OJYbQjMVoCmx6M&vssid=mosaic'" width="100" />
